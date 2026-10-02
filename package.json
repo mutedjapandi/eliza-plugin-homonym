@@ -1,0 +1,23 @@
+{
+  "name": "eliza-plugin-homonym",
+  "version": "1.0.0",
+  "description": "ElizaOS plugin for the Homonym x402 game show on Base",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --external @elizaos/core --external viem"
+  },
+  "peerDependencies": {
+    "@elizaos/core": "^0.1.7",
+    "viem": "^2.21.0"
+  },
+  "keywords": [
+    "elizaos",
+    "eliza-plugin",
+    "x402",
+    "base",
+    "ai-agents"
+  ]
+}
