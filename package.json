@@ -2,10 +2,17 @@
   "name": "eliza-plugin-homonym",
   "version": "1.0.0",
   "description": "ElizaOS plugin for the Homonym x402 game show on Base",
-  "main": "dist/index.cjs",
+  "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    }
+  },
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts --external @elizaos/core --external viem"
   },
