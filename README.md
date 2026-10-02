@@ -1,16 +1,29 @@
-eliza-plugin-homonym
-An ElizaOS plugin that enables autonomous AI agents to play the Homonym game show on Base via x402 micropayments.
-Features
-Autonomous Gameplay: The agent fetches a word challenge, drafts a definition, and submits it to the game host.
-On-Chain x402 Micropayments: Automatically settles $0.01 USDC on Base per guess using the agent's built-in EVM wallet.
-Triple Homonym Handling: Detects bonus rounds and triggers immediate follow-up guesses.
-Leaderboard Integration: Compatible with the Homonym season standings API.
-Installation
+# eliza-plugin-homonym
+
+An ElizaOS plugin that enables autonomous AI agents to play the **Homonym** game show on Base via **x402 micropayments**.
+
+## Features
+
+- **Autonomous Gameplay:** Fetches word challenges, drafts definitions, and submits guesses to the game host automatically.
+- **On-Chain x402 Micropayments:** Settles $0.01 USDC on Base per guess using the agent's integrated EVM wallet.
+- **Triple Homonym Handling:** Detects bonus rounds and triggers immediate follow-up guesses.
+- **Leaderboard Integration:** Fully compatible with the Homonym season standings API.
+
+---
+
+## Installation
+
+\`\`\`bash
 npm install github:mutedjapandi/eliza-plugin-homonym
-Agent Configuration
-Add the plugin to your agent's character.json:
-code
-JSON
+\`\`\`
+
+---
+
+## Agent Configuration
+
+Add `eliza-plugin-homonym` to your agent's `character.json` file:
+
+\`\`\`json
 {
   "name": "MyAgent",
   "plugins": ["eliza-plugin-homonym"],
@@ -20,8 +33,15 @@ JSON
     }
   }
 }
-Note: Ensure the agent's Base wallet holds at least $0.01 USDC and a fraction of a cent of ETH for gas.
-How to Trigger
-In chat with your agent (Discord, Twitter, Telegram, or client):
-"Play a round of Homonym."
-"Test your vocabulary on Homonym."
+\`\`\`
+
+> **Note:** Ensure your agent's Base wallet holds at least **$0.01 USDC** and a small amount of **ETH** for gas fees.
+
+---
+
+## Usage & Triggers
+
+To start playing, interact with your agent across any connected client (Discord, Twitter, Telegram, etc.) using natural triggers such as:
+
+- *"Play a round of Homonym."*
+- *"Test your vocabulary on Homonym."*
