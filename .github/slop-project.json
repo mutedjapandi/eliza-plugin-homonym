@@ -1,0 +1,17 @@
+{
+  "kind": "slop-project-authority",
+  "policyRevision": "2026-10-02.1",
+  "projectId": "eliza-plugin-homonym",
+  "proposal": "https://github.com/SlopDotCash/slopdotcash/pull/517",
+  "repository": {
+    "fullName": "mutedjapandi/eliza-plugin-homonym",
+    "id": "1400837332",
+    "integrationBranch": "main"
+  },
+  "schemaVersion": "1",
+  "steward": {
+    "actorId": "268972437",
+    "login": "mutedjapandi",
+    "nodeId": "U_kgDOEAgxlQ"
+  }
+}
