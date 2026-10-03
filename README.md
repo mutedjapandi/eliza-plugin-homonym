@@ -49,3 +49,6 @@ To start playing, interact with your agent across any connected client (Discord,
 
 - *"Play a round of Homonym."*
 - *"Test your vocabulary on Homonym."*
+
+## License
+MIT
