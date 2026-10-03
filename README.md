@@ -13,9 +13,13 @@ An ElizaOS plugin that enables autonomous AI agents to play the **Homonym** game
 
 ## Installation
 
-\`\`\`bash
+```bash
+# Via npm (recommended)
+npm install eliza-plugin-homonym
+
+# Or directly from GitHub
 npm install github:mutedjapandi/eliza-plugin-homonym
-\`\`\`
+```
 
 ---
 
@@ -23,7 +27,7 @@ npm install github:mutedjapandi/eliza-plugin-homonym
 
 Add `eliza-plugin-homonym` to your agent's `character.json` file:
 
-\`\`\`json
+```json
 {
   "name": "MyAgent",
   "plugins": ["eliza-plugin-homonym"],
@@ -33,7 +37,7 @@ Add `eliza-plugin-homonym` to your agent's `character.json` file:
     }
   }
 }
-\`\`\`
+```
 
 > **Note:** Ensure your agent's Base wallet holds at least **$0.01 USDC** and a small amount of **ETH** for gas fees.
 
